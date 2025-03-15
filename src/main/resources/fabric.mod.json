@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "speedmod",
+	"version": "${version}",
+	"name": "Speed Mod",
+	"description": "This is a simple speed mod!",
+	"authors": [
+		"Imwillg"
+	],
+	"contact": {
+		"homepage": "https://github.com/ImWillG",
+		"sources": "https://github.com/ImWillG/speedmod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/speedmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.imwillg.speedmod.SpeedMod"
+		],
+		"fabric-datagen": [
+			"net.imwillg.speedmod.SpeedModDataGenerator"
+		],
+		"client": [
+			"net.imwillg.speedmod.SpeedModClient"
+		]
+	},
+	"mixins": [
+		"speedmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
